@@ -1,0 +1,5 @@
+package GoProject
+
+func main() {
+
+}
