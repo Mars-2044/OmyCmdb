@@ -11,16 +11,16 @@ log:
   max_backups: "7"
 
 mysql:
-  host: "39.105.117.211"
+  host: "****"
   port: "3306"
-  user: "7road"
-  password: "Cssbh@123.."
+  user: "****"
+  password: "****"
   dbname: "OmyCmdb"
   max_open_conns: 200
   max_idle_conns: 50
 
 redis:
-  host: "39.105.117.211"
+  host: "****"
   port: "6379"
   db: "0"
   conn_pool: "100"
