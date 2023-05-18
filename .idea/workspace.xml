@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44704612-f5e3-4db2-bb70-94b4e8dd64a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/OmyBlog/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OmyBlog/.idea/OmyBlog.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OmyBlog/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OmyBlog/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/GoProject.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/hello.go" beforeDir="false" afterPath="$PROJECT_DIR$/OmyBlog/gin1.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" />
-    </list>
+    <list default="true" id="44704612-f5e3-4db2-bb70-94b4e8dd64a9" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,7 +35,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/OmyBlog" />
     <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
   <component name="RunManager" selected="Go Build.go build setting.go">

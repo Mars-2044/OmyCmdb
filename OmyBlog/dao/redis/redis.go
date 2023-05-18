@@ -1,24 +1,24 @@
 package redis
 
 import (
+	"OmyBlog/settings"
 	"context"
 	"fmt"
 	"github.com/go-redis/redis/v8"
-	"github.com/spf13/viper"
 )
 
 var rdb *redis.Client
 var ctx = context.Background()
 
-func Init() (err error) {
+func Init(cfg *settings.RedisConfig) (err error) {
 	rdb := redis.NewClient(&redis.Options{
 		Addr: fmt.Sprintf("%s:%d",
-			viper.GetString("redis.host"),
-			viper.GetInt("redis.port"),
+			cfg.Host,
+			cfg.Port,
 		),
-		Password: viper.GetString("redis.password"), // 密码
-		DB:       viper.GetInt("redis.db"),          // 数据库
-		PoolSize: viper.GetInt("redis.conn_pool"),   // 连接池大小
+		Password: cfg.Password, // 密码
+		DB:       cfg.DB,       // 数据库
+		PoolSize: cfg.PoolSize, // 连接池大小
 	})
 
 	_, err = rdb.Ping(ctx).Result()
