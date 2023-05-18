@@ -1,0 +1,26 @@
+app:
+  name: "web_app"
+  mode: "dev"
+  port: "8081"
+
+log:
+  level: "debug"
+  filename: "web_app.log"
+  max_size: "200"
+  max_age: "30"
+  max_backups: "7"
+
+mysql:
+  host: "39.105.117.211"
+  port: "3306"
+  user: "7road"
+  password: "Cssbh@123.."
+  dbname: "OmyCmdb"
+  max_open_conns: 200
+  max_idle_conns: 50
+
+redis:
+  host: "39.105.117.211"
+  port: "6379"
+  db: "0"
+  conn_pool: "100"

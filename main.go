@@ -1,5 +1,0 @@
-package GoProject
-
-func main() {
-
-}
