@@ -4,6 +4,7 @@ import (
 	"OmyBlog/dao/mysql"
 	"OmyBlog/dao/redis"
 	"OmyBlog/logger"
+	"OmyBlog/pkg/snowflake"
 	"OmyBlog/routes"
 	"OmyBlog/settings"
 	"context"
