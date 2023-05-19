@@ -2,6 +2,7 @@ app:
   name: "web_app"
   mode: "dev"
   port: "8081"
+  version: "1.0.1"
 
 log:
   level: "debug"
