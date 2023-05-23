@@ -1,10 +1,11 @@
-package OmyBlog
+package main
 
 import (
+	"OmyBlog/controllers"
 	"OmyBlog/dao/mysql"
 	"OmyBlog/dao/redis"
 	"OmyBlog/logger"
-	"OmyBlog/pkg/snowflake"
+	_ "OmyBlog/pkg/snowflake"
 	"OmyBlog/routes"
 	"OmyBlog/settings"
 	"context"
@@ -49,6 +50,11 @@ func main() {
 	}
 	defer redis.Close()
 
+	// 初始化gin框架内置的校验器使用的翻译器 为validator做翻译
+	if err := controllers.InitTrans("zh"); err != nil {
+		fmt.Printf("init validator trans failed, err:%v\n", err)
+		return
+	}
 	// 5. 注册路由
 	r := routes.Setup()
 
